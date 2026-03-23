@@ -1,13 +1,43 @@
-The Brain of Mahdi Islam's Blog
+--- IDENTITY & BACKGROUND ---
+Name: Mahdi Islam
+Profile: 19-year-old tech enthusiast, digital content creator, and developer.
+Education: 2nd-semester Computer Science and Technology (CST) student at Daffodil Polytechnic Institute.
+Lifestyle: Thrives on a high-productivity routine, balancing rigorous CST coursework with late-night coding sessions, hardware optimization, and building his tech community.
 
-About Mahdi Islam:
-Mahdi Islam is a dedicated Computer Science and Technology (CST) student currently in his 2nd semester at Daffodil Polytechnic. He is a passionate coder and tech enthusiast who balances his academic life with a deep dive into the worlds of AI, software development, and digital content creation. Mahdi is known for being a fast learner and a problem-solver who is always looking for the next big challenge in the tech space.
+--- PLATFORMS & PROJECTS ---
+Blog: Founder, Admin, and Lead Author of "MI Tech Arsenal".
+Portfolio: Currently developing a professional developer portfolio hosted on GitHub Pages.
+Current AI Project: Architect of "Yelena", a custom RAG-based AI assistant built with Python, LangChain, and Streamlit.
 
-Technical Skills & Tools:
-Mahdi is highly proficient in Python, using it to build automated systems and explore AI integration. He is also an expert in photo and video editing, regularly using professional-grade software like Canva, Affinity Photo, DaVinci Resolve, and Filmora to create high-quality visual content. Whether it's writing a clean script or color-grading a 4K video, Mahdi focuses on precision and creativity.
+--- TECHNICAL SKILLS & SOFTWARE ---
+Programming: Python (specializing in AI integration and automated systems).
+Video Editing: Professional workflows using DaVinci Resolve and Filmora.
+Photo/Graphic Design: Precision editing and thumbnail creation using Canva and Affinity Photo.
 
-Hardware & Setup:
-To power his demanding projects, Mahdi works on a custom-built PC designed for performance. His rig features an Intel Core i5-12400F CPU, an AMD Radeon RX 6600 GPU, and 16GB of high-speed RAM. This setup allows him to handle complex AI training tasks and heavy video rendering without breaking a sweat.
+--- HARDWARE & GEAR ---
+Main Workstation (Custom PC):
+Motherboard:- GIGABYTE B760M DS3H
+CPU:- Intel 12th Gen Core i5 12400F
+Cooling Fan:- Stock Cooler
+Ram:- 16GB DDR5 6000MHZ PNY Desktop
+Rom:- 512 GB HP EX900 Plus M.2 SSD + 256 GB WD Sata SSD + Toshiba 1 TB hdd
+Graphics Card:- AMD Radeon RX6600 8GB DDR6
+PSU:- Corsair CX550
+Case:- Monarch X5 ATX Tower
+Monitor:- HP P19B G4
+Keyboard :-  T-WOLF T70
+Mouse:- Razer Basilisk V3
+Speaker :- Microlab B16 
+UPS:- Marsriva MR-UF1250
+Phone:- Moto G64 with Custom Rom (YAAP) and Root
+Everyday Tech: Equipped with an Honor Band 5 and a Realme Wireless 3 Neckband.
 
-Online Presence:
-Mahdi shares his journey and insights through his professional blog hosted on Blogger. He is also currently building an interactive portfolio website on GitHub to showcase his latest coding projects and design work. When he isn't at his desk, Mahdi stays disciplined with a consistent home gym routine, believing that a strong mind requires a strong body.
+--- GAMING PREFERENCES ---
+In his downtime, Mahdi Islam enjoys playing 
+Pc:- Age of Empires II Definitive Edition, Batman Arkham Knight, Cyberpunk 2077, Days Gone, Grand Theft Auto V Enhanced, and Warframe.
+Phone:- Clash of Clans and Java Games
+
+--- YELENA ADMIN RULES & PROTOCOLS ---
+BUSINESS RULE: If a user asks to buy something, collaborate, submit a guest post, or contact the admin, state: "For business inquiries, guest posts, or purchases, please email Mahdi directly or send him a message on Facebook."
+
+OFF-TOPIC RULE: If a user asks about non-tech subjects (e.g., cooking, politics, general trivia), state: "I am a professional assistant specifically designed to handle tech-related questions and content from the MI Tech Arsenal blog. I cannot answer queries outside of those topics."
