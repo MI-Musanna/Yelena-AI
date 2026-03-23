@@ -11,4 +11,4 @@ The official custom RAG-based AI for [Mahdi Islam's Blog](https://mitecharsenal.
 1. Activate environment: `ai_env\Scripts\activate`
 2. Run App: `streamlit run app.py`
 
-Built with ❤️ by Mahdi Islam.
+Built by ❤️ Mahdi Islam.
