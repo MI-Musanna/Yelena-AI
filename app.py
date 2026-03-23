@@ -40,8 +40,8 @@ def initialize_yelena():
         st.warning(f"Sitemap sync issues: {e}")
 
     # B. LOCAL DATA: Read your private 'my_blog_post.txt' if uploaded
-    if os.path.exists("my_blog_post.txt"):
-        all_docs.extend(TextLoader("my_blog_post.txt").load())
+    if os.path.exists("extrainfo.txt"):
+        all_docs.extend(TextLoader("extrainfo.txt").load())
 
     # C. PROCESS: Break the massive data into small, searchable pieces
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=150)
