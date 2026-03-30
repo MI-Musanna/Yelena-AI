@@ -16,7 +16,7 @@ with st.sidebar:
     st.header("About the Dev")
     st.write("Built by Mahdi Islam")
     st.markdown("[Read my Blog](https://mitecharsenal.blogspot.com)")
-    st.markdown("[GitHub Portfolio](https://github.com/LittleEagle2007)")
+    st.markdown("[GitHub Portfolio](https://github.com/MI-Musanna)")
     st.info("Yelena is currently synced with all 91+ blog posts.")
 
 st.title("⚡ Chat with Yelena")
