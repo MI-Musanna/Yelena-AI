@@ -1,4 +1,7 @@
 import streamlit as st
+st.set_page_config(page_title="Yelena AI", page_icon="logo.png")
+st.sidebar.image("logo.png", width=150)
+st.sidebar.markdown("### Yelena AI Assistant")
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_chroma import Chroma 
