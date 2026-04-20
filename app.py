@@ -1,5 +1,4 @@
 import streamlit as st
-st.set_page_config(page_title="Yelena AI", page_icon="logo.png")
 st.sidebar.image("logo.png", width=150)
 st.sidebar.markdown("### Yelena AI Assistant")
 import os
@@ -13,7 +12,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
 # --- UI SETUP ---
-st.set_page_config(page_title="Yelena AI | Mahdi Islam", page_icon="⚡")
+st.set_page_config(page_title="Yelena AI", page_icon="logo.png")
 
 with st.sidebar:
     st.header("About the Dev")
