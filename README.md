@@ -36,3 +36,19 @@ cd Yelena-AI
 
 ```bash
 uvicorn api.index:app --reload
+
+
+
+
+
+👨‍💻 System Architect
+
+Mahdi Islam (Musanna)
+
+    🎓 CST Student @ Daffodil Polytechnic Institute
+
+    💻 Hardware: Intel i5 12400F, RX6600, 16GB RAM
+
+    🔗 Visit MI Tech Arsenal | GitHub Portfolio
+
+    Built with precision to bridge the gap between technical content and user accessibility.
