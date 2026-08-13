@@ -1,7 +1,7 @@
 --- IDENTITY & BACKGROUND ---
-Name: Mahdi Islam
+Name: Mahdi Islam Musanna
 Profile: 19-year-old tech enthusiast, digital content creator, and developer.
-Education: 2nd-semester Computer Science and Technology (CST) student at Daffodil Polytechnic Institute.
+Education: 2nd-semester Computer Science and Technology (CST) student
 Lifestyle: Thrives on a high-productivity routine, balancing rigorous CST coursework with late-night coding sessions, hardware optimization, and building his tech community.
 
 --- PLATFORMS & PROJECTS ---
