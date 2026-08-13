@@ -32,6 +32,7 @@ To run this RAG pipeline on your local machine, follow these steps:
 ```bash
 git clone [https://github.com/MI-Musanna/Yelena-AI.git](https://github.com/MI-Musanna/Yelena-AI.git)
 cd Yelena-AI
+'''
 
 ```bash
 uvicorn api.index:app --reload
