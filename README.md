@@ -14,11 +14,10 @@ Yelena is a custom-built AI agent designed to act as a 24/7 technical assistant.
 ---
 
 ## 🛠️ Tech Stack
-* **Language:** Python 3.14
+* **Language:** Python
 * **LLM:** Google Gemini 2.5 Flash
-* **Vector Database:** ChromaDB (In-Memory)
-* **Embeddings:** all-MiniLM-L6-v2
-* **Framework:** Streamlit
+* **Framework:** FastAPI
+* **Deployment:** Vercel (Serverless)
 
 ---
 
@@ -28,7 +27,7 @@ To run this RAG pipeline on your local machine, follow these steps:
 
 **1. Clone the repository**
 ```bash
-git clone [https://github.com/LittleEagle2007/Yelena-AI.git](https://github.com/LittleEagle2007/Yelena-AI.git)
+git clone https://github.com/LittleEagle2007/Yelena-AI.git
 cd Yelena-AI
 ```
 
