@@ -1,13 +1,13 @@
 # ⚡ Yelena AI Assistant
-**Automated RAG-Based Knowledge Engine for [MI Tech Arsenal](https://mitecharsenal.blogspot.com/)**
+**Automated Knowledge Engine for [MI Tech Arsenal](https://mitecharsenal.blogspot.com/)**
 
-Yelena is a custom-built AI agent designed to act as a 24/7 technical assistant. Using Retrieval-Augmented Generation (RAG), she actively crawls 90+ blog posts, processes complex technical queries, and delivers precise answers based on published expertise.
+Yelena is a custom-built AI agent designed to act as a 24/7 technical assistant. Deployed as a serverless API, she processes technical queries and delivers precise answers based on published expertise and custom knowledge bases.
 
 ---
 
 ## 🚀 Core Features
-* **Live Sitemap Sync:** Automatically discovers and indexes new blog posts via `sitemap.xml`.
-* **Neural Search:** Leverages Sentence Transformers to understand the *meaning* behind questions.
+* **24/7 Serverless Uptime:** Hosted on Vercel with zero app hibernation or sleep delay.
+* **FastAPI Backend:** Lightweight and high-performance API endpoint for instant responses.
 * **Floating Web Integration:** Deployed as a persistent, mobile-responsive widget directly into Blogger.
 * **Context-Aware:** Fully briefed on admin rules, hardware specs, and software workflows.
 
@@ -17,35 +17,30 @@ Yelena is a custom-built AI agent designed to act as a 24/7 technical assistant.
 * **Language:** Python
 * **LLM:** Google Gemini 2.5 Flash
 * **Framework:** FastAPI
-* **Deployment:** Vercel (Serverless)
+* **Handler:** Mangum (ASGI Adapter)
+* **Deployment Platform:** Vercel (Serverless Functions)
 
 ---
 
-## 💻 Quick Install
+## 💻 API Usage & Local Setup
 
 To run this RAG pipeline on your local machine, follow these steps:
 
-**1. Clone the repository**
-```bash
+### 1. Run Locally
 git clone https://github.com/LittleEagle2007/Yelena-AI.git
 cd Yelena-AI
 ```
 
-**2. Activate Virtual Environment**
-```bash
+### 2. Activate Virtual Environment
 python -m venv ai_env
 ai_env\Scripts\activate
-```
 
 **3. Install Requirements**
-```bash
 pip install -r requirements.txt
-```
 
 **4. Launch Yelena**
-```bash
 streamlit run app.py
-```
+
 
 ---
 
