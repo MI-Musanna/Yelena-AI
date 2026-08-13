@@ -27,22 +27,11 @@ Yelena is a custom-built AI agent designed to act as a 24/7 technical assistant.
 To run this RAG pipeline on your local machine, follow these steps:
 
 ### 1. Run Locally
-git clone https://github.com/LittleEagle2007/Yelena-AI.git
+
+**Clone the repository:**
+```bash
+git clone [https://github.com/MI-Musanna/Yelena-AI.git](https://github.com/MI-Musanna/Yelena-AI.git)
 cd Yelena-AI
-```
-
-### 2. Activate Virtual Environment
-python -m venv ai_env
-ai_env\Scripts\activate
-
-**3. Install Requirements**
-pip install -r requirements.txt
-
-**4. Launch Yelena**
-streamlit run app.py
-
-
----
 
 ## 👨‍💻 System Architect
 
