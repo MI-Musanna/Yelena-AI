@@ -24,19 +24,37 @@ Yelena is a custom-built AI agent designed to act as a 24/7 technical assistant.
 
 ## 💻 API Usage & Local Setup
 
-To run this RAG pipeline on your local machine, follow these steps:
-
 ### 1. Run Locally
 
-**Clone the repository:**
+**Step 1: Clone the repository**
 ```bash
 git clone [https://github.com/MI-Musanna/Yelena-AI.git](https://github.com/MI-Musanna/Yelena-AI.git)
 cd Yelena-AI
-'''
+```
 
+**Step 2: Install Requirements**
+```bash
+pip install -r requirements.txt
+```
+
+**Step 3: Launch Local Server**
 ```bash
 uvicorn api.index:app --reload
+```
 
+---
+
+### 2. API Endpoint
+
+Once deployed to Vercel, send a `POST` request to `/api/chat`:
+
+```json
+{
+  "message": "What are Mahdi's PC specifications?"
+}
+```
+
+---
 
 
 
