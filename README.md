@@ -33,11 +33,5 @@ To run this RAG pipeline on your local machine, follow these steps:
 git clone [https://github.com/MI-Musanna/Yelena-AI.git](https://github.com/MI-Musanna/Yelena-AI.git)
 cd Yelena-AI
 
-## 👨‍💻 System Architect
-
-**Mahdi Islam (Musanna)**
-* 🎓 CST Student @ Daffodil Polytechnic Institute 
-* 💻 Hardware: Intel i5 12400F, RX6600, 16GB RAM
-* 🔗 [Visit MI Tech Arsenal](https://mitecharsenal.blogspot.com/) | [GitHub Portfolio](https://github.com/LittleEagle2007)
-
-> Built with precision to bridge the gap between technical content and user accessibility.
+```bash
+uvicorn api.index:app --reload
