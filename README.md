@@ -15,7 +15,7 @@ Yelena is a custom-built AI agent designed to act as a 24/7 technical assistant.
 
 ## 🛠️ Tech Stack
 * **Language:** Python
-* **LLM:** Google Gemini 2.5 Flash
+* **LLM:** Google Gemini 3.5 Flash
 * **Framework:** FastAPI
 * **Handler:** Mangum (ASGI Adapter)
 * **Deployment Platform:** Vercel (Serverless Functions)
@@ -28,7 +28,7 @@ Yelena is a custom-built AI agent designed to act as a 24/7 technical assistant.
 
 **Step 1: Clone the repository**
 ```bash
-git clone [https://github.com/MI-Musanna/Yelena-AI.git](https://github.com/MI-Musanna/Yelena-AI.git)
+git clone https://github.com/MI-Musanna/Yelena-AI.git
 cd Yelena-AI
 ```
 
