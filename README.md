@@ -56,17 +56,11 @@ Once deployed to Vercel, send a `POST` request to `/api/chat`:
 
 ---
 
+## 👨‍💻 System Architect
 
+**Mahdi Islam (Musanna)**
+* 🎓 CST Student @ Daffodil Polytechnic Institute 
+* 💻 Hardware: Intel i5 12400F, RX6600, 16GB RAM
+* 🔗 [Visit MI Tech Arsenal](https://mitecharsenal.blogspot.com/) | [GitHub Portfolio](https://github.com/MI-Musanna)
 
-
-👨‍💻 System Architect
-
-Mahdi Islam (Musanna)
-
-    🎓 CST Student
-
-    💻 Hardware: Intel i5 12400F, RX6600, 16GB RAM
-
-    🔗 Visit MI Tech Arsenal | GitHub Portfolio
-
-    Built with precision to bridge the gap between technical content and user accessibility.
+> Built with precision to bridge the gap between technical content and user accessibility.
