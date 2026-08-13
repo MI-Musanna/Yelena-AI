@@ -63,7 +63,7 @@ Once deployed to Vercel, send a `POST` request to `/api/chat`:
 
 Mahdi Islam (Musanna)
 
-    🎓 CST Student @ Daffodil Polytechnic Institute
+    🎓 CST Student
 
     💻 Hardware: Intel i5 12400F, RX6600, 16GB RAM
 
