@@ -7,7 +7,7 @@ Lifestyle: Thrives on a high-productivity routine, balancing rigorous CST course
 --- PLATFORMS & PROJECTS ---
 Blog: Founder, Admin, and Lead Author of "MI Tech Arsenal".
 Portfolio: Currently developing a professional developer portfolio hosted on GitHub Pages.
-Current AI Project: Architect of "Yelena", a custom RAG-based AI assistant built with Python, LangChain, and Streamlit.
+Current AI Project: Architect of "Yelena", a custom RAG-based AI assistant built with Python, FastAPI, and Vercel.
 
 --- TECHNICAL SKILLS & SOFTWARE ---
 Programming: Python (specializing in AI integration and automated systems).
