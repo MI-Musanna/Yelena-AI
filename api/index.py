@@ -1,15 +1,15 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from mangum import Mangum
-from pydantic import BaseModel
-import google.genai as genai
+import os
 import xml.etree.ElementTree as ET
 import requests
-import os
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+import google.genai as genai
 
-app = FastAPI()
+# --- VERCEL DETECTS THIS EXACT OBJECT ---
+app = FastAPI(title="Yelena AI Backend")
 
-# Blogger Widget এবং অন্য যেকোনো ক্লায়েন্ট থেকে Access অনুমতির জন্য CORS
+# CORS Setup
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -21,7 +21,7 @@ app.add_middleware(
 class ChatRequest(BaseModel):
     message: str
 
-# --- 1. LIVE BLOG SITEMAP CRAWLER ---
+# 1. Sitemap Crawler
 def fetch_blog_sitemap_context():
     sitemap_url = "https://mitecharsenal.blogspot.com/sitemap.xml"
     titles_and_links = []
@@ -29,31 +29,32 @@ def fetch_blog_sitemap_context():
         response = requests.get(sitemap_url, timeout=5)
         if response.status_code == 200:
             root = ET.fromstring(response.content)
-            # Blogger sitemap namespace handling
             ns = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
             for url in root.findall('ns:url', ns):
                 loc = url.find('ns:loc', ns)
                 if loc is not None and loc.text:
                     link = loc.text
-                    # URL থেকে পরিষ্কার টাইটেল বের করা
                     title_slug = link.split('/')[-1].replace('.html', '').replace('-', ' ').title()
                     titles_and_links.append(f"- {title_slug}: {link}")
     except Exception as e:
-        print(f"Sitemap Fetch Error: {e}")
+        print(f"Sitemap Error: {e}")
     
     if titles_and_links:
-        return "\nLATEST PUBLISHED CONTENT & TUTORIALS ON MI TECH ARSENAL:\n" + "\n".join(titles_and_links[:40])
+        return "\nLATEST CONTENT ON MI TECH ARSENAL:\n" + "\n".join(titles_and_links[:40])
     return ""
 
-# --- 2. LOAD EXTRA INFO (Context Data) ---
+# 2. Extra Context
 extra_context = ""
 if os.path.exists("extrainfo.txt"):
-    with open("extrainfo.txt", "r", encoding="utf-8") as f:
-        extra_context = f.read()
+    try:
+        with open("extrainfo.txt", "r", encoding="utf-8") as f:
+            extra_context = f.read()
+    except Exception:
+        pass
 
 @app.get("/")
 def home():
-    return {"status": "Yelena AI Serverless Backend is Online 24/7!"}
+    return {"status": "Yelena AI is Online!"}
 
 @app.post("/api/chat")
 def chat_with_yelena(request: ChatRequest):
@@ -62,12 +63,8 @@ def chat_with_yelena(request: ChatRequest):
         return {"error": "API Key missing in environment variable."}
 
     client = genai.Client(api_key=api_key)
-
-    # লাইভ ব্লগ পোস্ট ইনডেক্স আনয়ন
     blog_sitemap_data = fetch_blog_sitemap_context()
 
-    # --- 3. UPGRADED SMART & PROFESSIONAL PROMPT ENGINE ---
-    # --- 3. UPGRADED COMPACT & SHARP PROMPT ENGINE ---
     system_prompt = f"""
     You are Yelena, the elite and sleek technical assistant for 'MI Tech Arsenal' blog, built by Mahdi Islam Musanna.
 
@@ -76,32 +73,28 @@ def chat_with_yelena(request: ChatRequest):
 
     {blog_sitemap_data}
 
-    CONTENT BROWSING PRESENTATION RULE:
-    When a user asks what posts or content are available on the blog, present them cleanly and directly with interactive action links. Do not create clutter.
-
-    Example template:
-    Here are the core areas covered on **MI Tech Arsenal**:
-    • 🤖 **Custom AI:** [Explore Yelena Assistant](URL)
-    • 🛡️ **Cybersecurity:** [Kali & Ethical Hacking](URL)
-    • 📱 **Open Source:** [Florid F-Droid Client](URL)
-    • 🖥️ **Windows:** [PC Protection Utilities](URL)
-
-    Which domain would you like to dive into?
+    CONVERSATION & PRESENTATION RULES:
+    1. KEEP RESPONSES SLEEK & COMPACT.
+    2. When asked about available content or posts, present only top core areas with concise markdown links:
+       - 🤖 **Custom AI:** [Yelena AI Assistant](URL)
+       - 🛡️ **Cybersecurity:** [Ethical Hacking & Kali](URL)
+       - 📱 **Open Source:** [Florid F-Droid Client](URL)
+       - 🖥️ **Windows:** [PC Protection Guide](URL)
     """
 
-    GENERAL QUERIES: Deliver concise, top-tier technical guidance using internal AI knowledge. No fluff.
-    NON-TECH QUERIES: Decline politely.
-    """
     full_prompt = f"{system_prompt}\n\nUser Question: {request.message}"
 
     try:
-        response = client.models.generate_content(
-            model="gemini-3.5-flash",
-            contents=full_prompt,
-        )
+        try:
+            response = client.models.generate_content(
+                model="gemini-3.5-flash",
+                contents=full_prompt,
+            )
+        except Exception:
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=full_prompt,
+            )
         return {"response": response.text}
     except Exception as e:
         return {"error": str(e)}
-
-# Vercel Serverless Handler
-handler = Mangum(app)
